@@ -14,7 +14,7 @@ async function initiateMultipartUpload(fileName) {
   const params = {
     Bucket: process.env.NEXT_AWS_S3_BUCKET_NAME,
     Key: fileName,
-    ContentType: "image/jpg",
+    ContentType: "text/csv",
   };
 
   const createMultipartUploadCommand = new CreateMultipartUploadCommand(params);
